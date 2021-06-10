@@ -1,0 +1,32 @@
+﻿<Page x:Class="project.main"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:project"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="main">
+
+    <Grid Background="Red" Margin="-10,0,10,0">
+        <DataGrid HorizontalAlignment="Left" Height="225" Margin="36,10,0,0" VerticalAlignment="Top" Width="391"/>
+        <Label Content="ID" HorizontalAlignment="Left" Margin="472,37,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="idtext" HorizontalAlignment="Left" Height="23" Margin="524,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
+        <Label Content="Title" HorizontalAlignment="Left" Margin="472,68,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="titletext" HorizontalAlignment="Left" Height="23" Margin="524,71,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.5,0.5">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.83"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <Label Content="Hody" HorizontalAlignment="Left" Margin="472,107,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="hodytext" HorizontalAlignment="Left" Height="167" Margin="524,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="266" Text="чладья,чконь,чслон,чферзь,чкороль,чслон,чконь,чладья,чпешка,чпешка,чпешка,чпешка,чпешка,чпешка,чпешка,чпешка,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,бпешка,бпешка,бпешка,бпешка,бпешка,бпешка,бпешка,бпешка,бладья,бконь,бслон,бферзь,бкороль,бслон,бконь,бладья"/>
+        <Button Content="Add" HorizontalAlignment="Left" Margin="472,277,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Button Content="Update" HorizontalAlignment="Left" Margin="472,298,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Delete" HorizontalAlignment="Left" Margin="472,319,0,0" VerticalAlignment="Top" Width="75"/>
+    </Grid>
+</Page>
