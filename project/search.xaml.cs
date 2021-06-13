@@ -16,23 +16,15 @@ using System.Windows.Shapes;
 namespace project
 {
     /// <summary>
-    /// Логика взаимодействия для SignRegist.xaml
+    /// Логика взаимодействия для search.xaml
     /// </summary>
-    public partial class SignRegist : Page
+    public partial class search : Page
     {
-        public SignRegist()
+        public search(string title,string arr)
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new Page1());
-        }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new Regist());
+            Title.Text = title;
+            hody.Text = arr;
         }
     }
 }

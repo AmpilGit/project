@@ -9,8 +9,8 @@
       Title="Page1">
 
     <Grid Background="AliceBlue">
-        <TextBox Name="nameintput" HorizontalAlignment="Left" Height="51" Margin="81,107,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="221"/>
-        <TextBox  Name="passwordinput" HorizontalAlignment="Left" Height="46" Margin="81,209,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="221"/>
+        <TextBox Name="nameintput" HorizontalAlignment="Left" Height="51" Margin="81,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="221"/>
+        <TextBox  Name="passwordinput" HorizontalAlignment="Left" Height="46" Margin="81,209,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="221"/>
         <TextBlock HorizontalAlignment="Left" Margin="81,74,0,0" TextWrapping="Wrap" Text="Nickname" VerticalAlignment="Top" Width="128"/>
         <TextBlock HorizontalAlignment="Left" Margin="81,179,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" Width="128"/>
         <Button Content="Sign" HorizontalAlignment="Left" Margin="81,287,0,0" VerticalAlignment="Top" Width="146" Height="51" Click="Button_Click"/>

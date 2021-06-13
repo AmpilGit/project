@@ -9,11 +9,13 @@
       Title="main">
 
     <Grid Background="Red" Margin="-10,0,10,0">
-        <DataGrid HorizontalAlignment="Left" Height="225" Margin="36,10,0,0" VerticalAlignment="Top" Width="391"/>
+        <DataGrid Name="items" HorizontalAlignment="Left" Height="225" Margin="36,10,0,0" VerticalAlignment="Top" Width="391" MouseUp="mouseup">
+
+        </DataGrid>
         <Label Content="ID" HorizontalAlignment="Left" Margin="472,37,0,0" VerticalAlignment="Top"/>
-        <TextBox Name="idtext" HorizontalAlignment="Left" Height="23" Margin="524,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
+        <TextBlock Background="Gray" FontStyle="Italic"  Name="idtext" HorizontalAlignment="Left" Height="32" Margin="524,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="139" />
         <Label Content="Title" HorizontalAlignment="Left" Margin="472,68,0,0" VerticalAlignment="Top"/>
-        <TextBox Name="titletext" HorizontalAlignment="Left" Height="23" Margin="524,71,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.5,0.5">
+        <TextBox Name="titletext" HorizontalAlignment="Left" Height="37" Margin="524,71,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="140" RenderTransformOrigin="0.5,0.5">
             <TextBox.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -26,7 +28,8 @@
         <Label Content="Hody" HorizontalAlignment="Left" Margin="472,107,0,0" VerticalAlignment="Top"/>
         <TextBox Name="hodytext" HorizontalAlignment="Left" Height="167" Margin="524,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="266" Text="чладья,чконь,чслон,чферзь,чкороль,чслон,чконь,чладья,чпешка,чпешка,чпешка,чпешка,чпешка,чпешка,чпешка,чпешка,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,бпешка,бпешка,бпешка,бпешка,бпешка,бпешка,бпешка,бпешка,бладья,бконь,бслон,бферзь,бкороль,бслон,бконь,бладья"/>
         <Button Content="Add" HorizontalAlignment="Left" Margin="472,277,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
-        <Button Content="Update" HorizontalAlignment="Left" Margin="472,298,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button Content="Delete" HorizontalAlignment="Left" Margin="472,319,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Update" HorizontalAlignment="Left" Margin="472,298,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
+        <Button Content="Delete" HorizontalAlignment="Left" Margin="472,319,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_2"/>
+        <Button Content="Search" HorizontalAlignment="Left" Margin="472,340,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_3"/>
     </Grid>
 </Page>
